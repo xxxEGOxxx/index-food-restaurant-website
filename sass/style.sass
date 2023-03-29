@@ -1,0 +1,700 @@
+body
+    font-family: 'Roboto'
+    font-style: normal
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+
+
+.header
+    position: fixed
+    width: 100%
+    background: #ffffff
+    margin-bottom: 15px
+    z-index: 5
+    padding: 5px 0
+    &_container
+        max-width: 1200px
+        margin: auto
+        padding: 0 10px
+    &_wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &_search
+        position: relative
+        max-width: 620px
+        width: 100%
+        background: rgba(238, 238, 238, 0.71)
+        padding: 13px 50px 13px 20px
+        border-radius: 10px
+        margin: 0 10px
+        &_input
+            background: transparent
+            outline: none
+            border: none
+            font-weight: 400
+            font-size: 16px
+            line-height: 23px   
+            color: #46444f
+            width: 100%
+    &_search::before
+        position: absolute
+        right: 20px
+        top: 12px
+        content: ''
+        width: 24px
+        height: 23px
+        background: url(../img/Search.svg)
+        background-size: cover
+        background-repeat: no-repeat
+    &_login
+        background: #EBEBEB
+        border-radius: 50px
+        padding: 16px 30px
+        text-decoration: none
+        font-weight: 400
+        font-size: 14px
+        line-height: 16px
+
+        color: #000000
+        transition: .4s
+    &_login:hover
+        background: #7d7d7d
+        color: #dfdfdf
+        font-size: 13.5px
+    &_cart
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 49px
+        height: 49px
+        border-radius: 50%
+        background: #F66A15
+        transition: .4s
+        margin-left: 30px
+        &_count
+            position: absolute
+            display: flex
+            justify-content: center
+            align-items: center 
+            padding: 2px
+            width: 15px
+            height: 15px
+            border-radius: 50%
+            bottom: -5px
+            right: 0
+            font-weight: 400
+            font-size: 12px
+            text-align: center
+            color: #000000
+            background: #ffaf19
+            margin: 0
+        &_icon
+            width: 24px
+            height: 24px
+    &_cart:hover
+        background: #c96e13
+    
+    &_btns
+        display: flex
+
+.slider
+    padding-top: 111px
+    margin-bottom: 50px
+    &_container
+        max-width: 1200px
+        margin: auto  
+        border-radius: 20px
+    &_slide
+        min-height: 400px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        &_1
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide_1_bg.jpg")
+            background-size: cover
+        &_2
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide_2_bg.jpg")
+            background-size: cover
+        &_3
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide_3_bg.jpg")
+            background-size: cover
+    &_info
+        display: flex
+        flex-direction: column
+        max-width: 390px
+        margin-left: 100px
+        align-items: flex-start
+    &_title, &_text
+        margin: 0
+    &_title
+        font-weight: 700
+        font-size: 50px
+        line-height: 51px
+        color: #FFFFFF
+        margin-bottom: 15px
+    &_text
+        font-weight: 700
+        font-size: 16px
+        line-height: 23px
+        color: #FFFFFF
+        margin-bottom: 30px
+    &_btn
+        font-weight: 500
+        font-size: 14px
+        line-height: 23px
+        color: #FFFFFF
+        background: #F47322
+        border-radius: 25px
+        padding: 12px 52px
+        text-decoration: none
+        transition: .4s
+    &_btn:hover
+        background: #c96e13
+        font-size: 13.5px
+
+.card-offers
+    margin-bottom: 110px
+    &_container
+        max-width: 1200px
+        margin: auto
+    &_wrapper
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        justify-content: space-between
+    &_item
+        margin-bottom: 25px
+        margin-right: auto
+        margin-left: auto
+        min-height: 380px
+        width: 100%
+        max-width: 575px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        border-radius: 20px
+        &_1
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/item_1_bg.jpg")
+            background-size: cover
+        &_2
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/item_2_bg.jpg")
+            background-size: cover
+    &_info
+        display: flex
+        flex-direction: column
+        max-width: 390px
+        margin-left: 32px
+        align-items: flex-start
+    &_title
+        margin-top: 36px
+        font-weight: 500
+        font-size: 24px
+        line-height: 23px
+        color: #FFFFFF
+    &_text
+        max-width: 168px
+        font-weight: 500
+        font-size: 16px
+        line-height: 23px
+        margin-bottom: 72px
+        color: #FFFFFF
+    &_price
+        margin-bottom: 8px
+        font-weight: 500
+        font-size: 24px
+        line-height: 23px
+        color: #FFFFFF
+    &_delivery-price
+        margin-bottom: 25px
+        font-weight: 500
+        font-size: 16px
+        line-height: 23px
+        color: #FFFFFF
+    &_btn
+        margin-bottom: 30px
+        font-weight: 500
+        font-size: 16px
+        line-height: 23px
+        color: #5F5F61
+        background: #FFFFFF
+        border-radius: 50px
+        transition: .4s
+        text-decoration: none
+        padding: 13px 52px
+    &_btn:hover
+        background: #7c7c7c
+        color: #dfdfdf
+        font-size: 15.5px
+
+.delivery
+    margin-bottom: 100px
+    &_container
+        max-width: 1200px
+        margin: auto
+    &_wrapper
+        display: columns
+        align-items: center
+        justify-content: space-between
+    &_title
+        margin-bottom: 47px
+        font-weight: 500
+        font-size: 32px
+        line-height: 23px
+        color: #000000
+    &_cards
+        margin-bottom: 30px
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+    &_card
+        min-height: 180px
+        min-width: 275px
+        margin-bottom: 30px
+        &_1
+            background: url("../img/delivery_1.jpg")
+            border-radius: 18px
+        &_2
+            background: url("../img/delivery_2.jpg")
+            border-radius: 18px
+        &_3
+            background: url("../img/delivery_3.jpg")
+            border-radius: 18px
+        &_4
+            background: url("../img/delivery_4.jpg")
+            border-radius: 18px
+        &_5
+            background: url("../img/delivery_5.jpg")
+            border-radius: 18px
+        &_6
+            background: url("../img/delivery_6.jpg")
+            border-radius: 18px
+        &_7
+            background: url("../img/delivery_7.jpg")
+            border-radius: 18px
+        &_8
+            background: url("../img/delivery_8.jpg")
+            border-radius: 18px
+    &_info h2 
+        font-weight: 500
+        font-size: 20px
+        line-height: 23px   
+        padding: 5px 10px 
+    &_info
+        max-width: fit-content
+        margin: 16px 10px
+        &_1 
+            background: #D0FD89
+            border-radius: 30px
+            color: #49494F 
+        &_2 
+            background: #AEBC41
+            border-radius: 30px
+            color: #FFFFFF
+        &_3
+            background: #B86B78
+            border-radius: 30px
+            color: #FFFFFF
+        &_4
+            background: #D68334
+            border-radius: 30px
+            color: #FFFFFF
+        &_5
+            background: #CD6255
+            border-radius: 30px
+            color: #FFFFFF
+        &_6
+            background: #FFFDBF
+            border-radius: 30px
+            color: #49494F 
+        &_7
+            background: #F6FDC8
+            border-radius: 30px
+            color: #49494F 
+        &_8 
+            background: #FEF7FE
+            border-radius: 30px
+            color: #49494F 
+
+.food-categories
+    margin-bottom: 100px
+    background: #F6F6F6
+    &_container
+        max-width: 1200px
+        margin: auto
+    &_wrapper
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &_title
+        padding-top: 40px
+    &_tab
+        max-width: 390px
+        margin: 50px 0px 60px 0px
+        display: flex
+        justify-content: space-between
+    &_tab-text
+        font-weight: 400
+        font-size: 20px
+        line-height: 23px
+        color: #49494F
+        &_active
+            color: #F37321
+    &_cards
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        width: 100%
+    &_card
+        max-width: 270px
+        max-height: 470px
+        background: #FFFFFF
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1)
+        border-radius: 20px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-bottom: 20px
+        align-items: center
+    &_img
+        max-height: 190px
+        max-width: 270px
+    &_info
+        margin: 20px 25px 20px 25px
+    &_card-title
+        max-width: 200px
+        font-weight: 500
+        font-size: 20px
+        line-height: 23px
+        color: #000000
+    &_text
+        max-width: 220px
+        font-weight: 500
+        font-size: 14px
+        line-height: 23px
+        color: #B9B9BE
+    &_bottom-row
+        display: flex
+        justify-content: space-between
+        max-height: 50px
+    &_buy-info
+        display: columns
+        max-height: 50px
+        margin-right: 25px
+    &_price
+        font-weight: 500
+        font-size: 23px
+        line-height: 23px
+        color: #4B4B51
+        margin: 0
+    &_weight
+        font-weight: 500
+        font-size: 17px
+        line-height: 20px
+        color: #AAAAB1
+        margin: 0
+    &_card-btn
+        border: 2px solid #F37321
+        border-radius: 33px
+        margin: auto
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        color: #F37321
+        padding: 10px 25px
+        margin-right: 0px
+        margin-bottom: 0
+        transition: .2s
+        text-decoration: none
+        cursor: not-allowed
+    &_card-btn:hover
+        border: 2px solid #e38042
+        color: #e38042
+        font-size: 15.5px
+    &_bottom-btn
+        border: 2px solid #F37321
+        border-radius: 33px
+        display: flex
+        max-width: fit-content
+        margin: auto
+        margin-top: 60px
+        margin-bottom: 60px
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        color: #F37321
+        padding: 15px 100px
+        transition: .2s
+        text-decoration: none
+    &_bottom-btn:hover
+        border: 2px solid #e38042
+        color: #e38042
+        font-size: 15.5px
+
+.benefits
+    margin-bottom: 200px
+    &_container
+        max-width: 1200px
+        margin: auto
+    &_wrapper
+        display: flex
+        flex-direction: column
+    &_tittle
+        margin-bottom: 50px
+        font-weight: 500
+        font-size: 32px
+        line-height: 23px
+        color: #000000
+    &_cards
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &_card
+        background: #FFFFFF
+        border: 1px solid #E9E9E9
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1)
+        border-radius: 18px
+        max-width: 270px
+        max-height: 300px
+        display: flex
+        flex-direction: column
+        transition: .4s
+    &_img
+        margin: 32px auto 36px
+    &_info
+        display: flex
+        flex-direction: column
+    &_question
+        margin: 0px 40px 13px
+        margin-bottom: 15px
+        font-weight: 500
+        font-size: 16px
+        line-height: 23px
+        text-align: center
+        color: #000000
+    &_answer
+        margin: 0px 23px 23px 23px
+        font-weight: 400
+        font-size: 14px
+        line-height: 22px
+        text-align: center
+        color: #49494F
+    &_card:hover
+        background: #F37321
+    &_card:hover .benefits_question  
+        color: #FFFFFF
+    &_card:hover .benefits_answer
+        color: #ffffff    
+
+
+.footer
+    background: #F6F6F6
+    &_container
+        max-width: 1200px
+        margin: auto
+        padding: 0 10px
+    &_wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &_logo
+        margin: 40px 0
+    &_social
+        text-decoration: none
+    &_social
+        margin-right: 20px
+    &_links
+        margin-left: 50px
+        margin-right: auto        
+    &_link
+        text-decoration-line: underline
+        color: #000000
+        margin-right: 50px
+
+@media (max-width: 1205px)
+    .card-offers
+        &_item
+            width: 100%
+            max-width: 100%
+    .food-categories
+        &_card
+            margin-bottom: 35px
+            width: 48%
+            max-width: 100%
+        &_img
+            width: 100%
+            max-width: 100%
+        &_info
+            margin-right: 25px
+            margin-left: 25px
+        &_card-title
+            max-width: 100%
+            margin-right: 0px
+            font-weight: 500
+            font-size: 20px
+            line-height: 23px
+            color: #000000
+        &_text
+            margin-right: 0px
+            max-width: 100%
+            font-weight: 500
+            font-size: 14px
+            line-height: 23px
+            color: #B9B9BE
+        &_
+   
+
+@media (max-width: 1164px)
+    .delivery
+        &_card
+            background-size: cover
+            background-position: bottom
+            width: 30%
+            max-width: 100%
+            background-repeat: no-repeat
+    
+@media (max-width: 1104px)
+    .benefits
+        &_card
+            width: 48%
+            max-width: 100%
+            margin-bottom: 20px
+
+@media (max-width: 930px)
+    .delivery
+        &_card
+            width: 48%
+
+@media (max-width: 900px)
+    .header
+        //padding-bottom: 10px
+        &_logo
+            width: 120px
+            order: 1
+        &_wrapper
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-between
+        &_search
+            margin: 0
+            max-width: none
+            margin-top: 20px
+            margin-bottom: 25px
+            order: 3
+        &_search::before
+            right: 10px
+            top: 14px    
+        &_btns
+            order: 2    
+        
+    .slider
+        padding: 0 10px
+        padding-top: 167px
+        &_slide
+            &_1
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 100%, rgba(0, 0, 0, 0) 100%), url("../img/slide_1_bg.jpg")
+                background-position: center right -80px
+            &_2
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 100%, rgba(0, 0, 0, 0) 100%), url("../img/slide_2_bg.jpg")
+                background-position: center right -80px
+            &_3
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 100%, rgba(0, 0, 0, 0) 100%), url("../img/slide_3_bg.jpg")
+                background-position: center right -80px
+        &_info
+            margin-left: 25px
+    .card-offers
+        &_item
+    .delivery
+        &_card
+            margin-right: auto
+            margin-left: auto
+            margin-bottom: 25px
+        &_title
+            text-align: center
+    .food-categories
+        &_title
+            text-align: center
+        &_tab
+            margin-right: auto
+            margin-left: auto
+        &_tab-text
+        &_card
+            margin-right: auto
+            margin-left: auto
+            margin-bottom: 25px
+        &_img
+            
+    .benefits
+        &_tittle
+            text-align: center
+        &_card
+            margin-right: auto
+            margin-left: auto
+            margin-bottom: 25px
+            width: 48%
+            max-width: 100%
+    .footer
+        &_logo
+            width: 120px
+
+@media (max-width: 840px)
+    .delivery
+        &_card
+            background-size: cover
+            background-position: bottom
+            width: 45%
+            max-width: 100%
+            background-repeat: no-repeat
+
+@media (max-width: 713px)
+    .footer
+        &_links
+            display: flex
+            flex-direction: column
+        &_link
+            margin-left: 25px
+            margin-bottom: 10px
+        &_socials
+            display: flex
+            flex-direction: column
+        &_social
+            margin-right: 0
+
+@media (max-width: 690px)
+    .footer
+        &_wrapper
+            display: flex
+@media (max-width: 630px)
+    .delivery
+        &_card
+            background-size: cover
+            background-position: center
+            width: 98%
+            max-width: 100%
+            background-repeat: no-repeat
+@media (max-width: 565px)
+    .benefits
+        &_card
+            width: 98%
+            max-width: 100%
+    .food-categories
+        &_tab
+            flex-direction: column
+            margin-left: 10px
+        &_card
+            width: 98%
+        &_img
+            width: 100%
+            max-width: 100%
+    .footer
+        &_links
+            margin-left: 0px
+        &_link
+            margin-right: 20px
+            margin-left: 20px
+            

@@ -1,0 +1,817 @@
+body {
+  font-family: "Roboto";
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  margin-bottom: 15px;
+  z-index: 5;
+  padding: 5px 0;
+}
+.header_container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+}
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_search {
+  position: relative;
+  max-width: 620px;
+  width: 100%;
+  background: rgba(238, 238, 238, 0.71);
+  padding: 13px 50px 13px 20px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.header_search_input {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #46444f;
+  width: 100%;
+}
+.header_search::before {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  content: "";
+  width: 24px;
+  height: 23px;
+  background: url(../img/Search.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header_login {
+  background: #EBEBEB;
+  border-radius: 50px;
+  padding: 16px 30px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  transition: 0.4s;
+}
+.header_login:hover {
+  background: #7d7d7d;
+  color: #dfdfdf;
+  font-size: 13.5px;
+}
+.header_cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  background: #F66A15;
+  transition: 0.4s;
+  margin-left: 30px;
+}
+.header_cart_count {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  bottom: -5px;
+  right: 0;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #000000;
+  background: #ffaf19;
+  margin: 0;
+}
+.header_cart_icon {
+  width: 24px;
+  height: 24px;
+}
+.header_cart:hover {
+  background: #c96e13;
+}
+.header_btns {
+  display: flex;
+}
+
+.slider {
+  padding-top: 111px;
+  margin-bottom: 50px;
+}
+.slider_container {
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 20px;
+}
+.slider_slide {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slider_slide_1 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide_1_bg.jpg");
+  background-size: cover;
+}
+.slider_slide_2 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide_2_bg.jpg");
+  background-size: cover;
+}
+.slider_slide_3 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide_3_bg.jpg");
+  background-size: cover;
+}
+.slider_info {
+  display: flex;
+  flex-direction: column;
+  max-width: 390px;
+  margin-left: 100px;
+  align-items: flex-start;
+}
+.slider_title, .slider_text {
+  margin: 0;
+}
+.slider_title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 51px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+.slider_text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.slider_btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #FFFFFF;
+  background: #F47322;
+  border-radius: 25px;
+  padding: 12px 52px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.slider_btn:hover {
+  background: #c96e13;
+  font-size: 13.5px;
+}
+
+.card-offers {
+  margin-bottom: 110px;
+}
+.card-offers_container {
+  max-width: 1200px;
+  margin: auto;
+}
+.card-offers_wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-offers_item {
+  margin-bottom: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 380px;
+  width: 100%;
+  max-width: 575px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+}
+.card-offers_item_1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/item_1_bg.jpg");
+  background-size: cover;
+}
+.card-offers_item_2 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/item_2_bg.jpg");
+  background-size: cover;
+}
+.card-offers_info {
+  display: flex;
+  flex-direction: column;
+  max-width: 390px;
+  margin-left: 32px;
+  align-items: flex-start;
+}
+.card-offers_title {
+  margin-top: 36px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.card-offers_text {
+  max-width: 168px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 72px;
+  color: #FFFFFF;
+}
+.card-offers_price {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.card-offers_delivery-price {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.card-offers_btn {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #5F5F61;
+  background: #FFFFFF;
+  border-radius: 50px;
+  transition: 0.4s;
+  text-decoration: none;
+  padding: 13px 52px;
+}
+.card-offers_btn:hover {
+  background: #7c7c7c;
+  color: #dfdfdf;
+  font-size: 15.5px;
+}
+
+.delivery {
+  margin-bottom: 100px;
+}
+.delivery_container {
+  max-width: 1200px;
+  margin: auto;
+}
+.delivery_wrapper {
+  display: columns;
+  align-items: center;
+  justify-content: space-between;
+}
+.delivery_title {
+  margin-bottom: 47px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  color: #000000;
+}
+.delivery_cards {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.delivery_card {
+  min-height: 180px;
+  min-width: 275px;
+  margin-bottom: 30px;
+}
+.delivery_card_1 {
+  background: url("../img/delivery_1.jpg");
+  border-radius: 18px;
+}
+.delivery_card_2 {
+  background: url("../img/delivery_2.jpg");
+  border-radius: 18px;
+}
+.delivery_card_3 {
+  background: url("../img/delivery_3.jpg");
+  border-radius: 18px;
+}
+.delivery_card_4 {
+  background: url("../img/delivery_4.jpg");
+  border-radius: 18px;
+}
+.delivery_card_5 {
+  background: url("../img/delivery_5.jpg");
+  border-radius: 18px;
+}
+.delivery_card_6 {
+  background: url("../img/delivery_6.jpg");
+  border-radius: 18px;
+}
+.delivery_card_7 {
+  background: url("../img/delivery_7.jpg");
+  border-radius: 18px;
+}
+.delivery_card_8 {
+  background: url("../img/delivery_8.jpg");
+  border-radius: 18px;
+}
+.delivery_info h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 5px 10px;
+}
+.delivery_info {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 16px 10px;
+}
+.delivery_info_1 {
+  background: #D0FD89;
+  border-radius: 30px;
+  color: #49494F;
+}
+.delivery_info_2 {
+  background: #AEBC41;
+  border-radius: 30px;
+  color: #FFFFFF;
+}
+.delivery_info_3 {
+  background: #B86B78;
+  border-radius: 30px;
+  color: #FFFFFF;
+}
+.delivery_info_4 {
+  background: #D68334;
+  border-radius: 30px;
+  color: #FFFFFF;
+}
+.delivery_info_5 {
+  background: #CD6255;
+  border-radius: 30px;
+  color: #FFFFFF;
+}
+.delivery_info_6 {
+  background: #FFFDBF;
+  border-radius: 30px;
+  color: #49494F;
+}
+.delivery_info_7 {
+  background: #F6FDC8;
+  border-radius: 30px;
+  color: #49494F;
+}
+.delivery_info_8 {
+  background: #FEF7FE;
+  border-radius: 30px;
+  color: #49494F;
+}
+
+.food-categories {
+  margin-bottom: 100px;
+  background: #F6F6F6;
+}
+.food-categories_container {
+  max-width: 1200px;
+  margin: auto;
+}
+.food-categories_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.food-categories_title {
+  padding-top: 40px;
+}
+.food-categories_tab {
+  max-width: 390px;
+  margin: 50px 0px 60px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.food-categories_tab-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #49494F;
+}
+.food-categories_tab-text_active {
+  color: #F37321;
+}
+.food-categories_cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.food-categories_card {
+  max-width: 270px;
+  max-height: 470px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.food-categories_img {
+  max-height: 190px;
+  max-width: 270px;
+}
+.food-categories_info {
+  margin: 20px 25px 20px 25px;
+}
+.food-categories_card-title {
+  max-width: 200px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+.food-categories_text {
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #B9B9BE;
+}
+.food-categories_bottom-row {
+  display: flex;
+  justify-content: space-between;
+  max-height: 50px;
+}
+.food-categories_buy-info {
+  display: columns;
+  max-height: 50px;
+  margin-right: 25px;
+}
+.food-categories_price {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  color: #4B4B51;
+  margin: 0;
+}
+.food-categories_weight {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #AAAAB1;
+  margin: 0;
+}
+.food-categories_card-btn {
+  border: 2px solid #F37321;
+  border-radius: 33px;
+  margin: auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F37321;
+  padding: 10px 25px;
+  margin-right: 0px;
+  margin-bottom: 0;
+  transition: 0.2s;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+.food-categories_card-btn:hover {
+  border: 2px solid #e38042;
+  color: #e38042;
+  font-size: 15.5px;
+}
+.food-categories_bottom-btn {
+  border: 2px solid #F37321;
+  border-radius: 33px;
+  display: flex;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F37321;
+  padding: 15px 100px;
+  transition: 0.2s;
+  text-decoration: none;
+}
+.food-categories_bottom-btn:hover {
+  border: 2px solid #e38042;
+  color: #e38042;
+  font-size: 15.5px;
+}
+
+.benefits {
+  margin-bottom: 200px;
+}
+.benefits_container {
+  max-width: 1200px;
+  margin: auto;
+}
+.benefits_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.benefits_tittle {
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  color: #000000;
+}
+.benefits_cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.benefits_card {
+  background: #FFFFFF;
+  border: 1px solid #E9E9E9;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  max-width: 270px;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s;
+}
+.benefits_img {
+  margin: 32px auto 36px;
+}
+.benefits_info {
+  display: flex;
+  flex-direction: column;
+}
+.benefits_question {
+  margin: 0px 40px 13px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.benefits_answer {
+  margin: 0px 23px 23px 23px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #49494F;
+}
+.benefits_card:hover {
+  background: #F37321;
+}
+.benefits_card:hover .benefits_question {
+  color: #FFFFFF;
+}
+.benefits_card:hover .benefits_answer {
+  color: #ffffff;
+}
+
+.footer {
+  background: #F6F6F6;
+}
+.footer_container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+}
+.footer_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_logo {
+  margin: 40px 0;
+}
+.footer_social {
+  text-decoration: none;
+}
+.footer_social {
+  margin-right: 20px;
+}
+.footer_links {
+  margin-left: 50px;
+  margin-right: auto;
+}
+.footer_link {
+  text-decoration-line: underline;
+  color: #000000;
+  margin-right: 50px;
+}
+
+@media (max-width: 1205px) {
+  .card-offers_item {
+    width: 100%;
+    max-width: 100%;
+  }
+  .food-categories_card {
+    margin-bottom: 35px;
+    width: 48%;
+    max-width: 100%;
+  }
+  .food-categories_img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .food-categories_info {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  .food-categories_card-title {
+    max-width: 100%;
+    margin-right: 0px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+  }
+  .food-categories_text {
+    margin-right: 0px;
+    max-width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #B9B9BE;
+  }
+}
+@media (max-width: 1164px) {
+  .delivery_card {
+    background-size: cover;
+    background-position: bottom;
+    width: 30%;
+    max-width: 100%;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1104px) {
+  .benefits_card {
+    width: 48%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 930px) {
+  .delivery_card {
+    width: 48%;
+  }
+}
+@media (max-width: 900px) {
+  .header_logo {
+    width: 120px;
+    order: 1;
+  }
+  .header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header_search {
+    margin: 0;
+    max-width: none;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    order: 3;
+  }
+  .header_search::before {
+    right: 10px;
+    top: 14px;
+  }
+  .header_btns {
+    order: 2;
+  }
+  .slider {
+    padding: 0 10px;
+    padding-top: 167px;
+  }
+  .slider_slide_1 {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 100%, rgba(0, 0, 0, 0) 100%), url("../img/slide_1_bg.jpg");
+    background-position: center right -80px;
+  }
+  .slider_slide_2 {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 100%, rgba(0, 0, 0, 0) 100%), url("../img/slide_2_bg.jpg");
+    background-position: center right -80px;
+  }
+  .slider_slide_3 {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 100%, rgba(0, 0, 0, 0) 100%), url("../img/slide_3_bg.jpg");
+    background-position: center right -80px;
+  }
+  .slider_info {
+    margin-left: 25px;
+  }
+  .delivery_card {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+  }
+  .delivery_title {
+    text-align: center;
+  }
+  .food-categories_title {
+    text-align: center;
+  }
+  .food-categories_tab {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .food-categories_card {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+  }
+  .benefits_tittle {
+    text-align: center;
+  }
+  .benefits_card {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    width: 48%;
+    max-width: 100%;
+  }
+  .footer_logo {
+    width: 120px;
+  }
+}
+@media (max-width: 840px) {
+  .delivery_card {
+    background-size: cover;
+    background-position: bottom;
+    width: 45%;
+    max-width: 100%;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 713px) {
+  .footer_links {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_link {
+    margin-left: 25px;
+    margin-bottom: 10px;
+  }
+  .footer_socials {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_social {
+    margin-right: 0;
+  }
+}
+@media (max-width: 690px) {
+  .footer_wrapper {
+    display: flex;
+  }
+}
+@media (max-width: 630px) {
+  .delivery_card {
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    max-width: 100%;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 565px) {
+  .benefits_card {
+    width: 98%;
+    max-width: 100%;
+  }
+  .food-categories_tab {
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .food-categories_card {
+    width: 98%;
+  }
+  .food-categories_img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .footer_links {
+    margin-left: 0px;
+  }
+  .footer_link {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

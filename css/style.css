@@ -14,6 +14,9 @@ body {
   z-index: 5;
   padding: 5px 0;
 }
+.header_logo {
+  cursor: pointer;
+}
 .header_container {
   max-width: 1200px;
   margin: auto;
@@ -32,6 +35,7 @@ body {
   padding: 13px 50px 13px 20px;
   border-radius: 10px;
   margin: 0 10px;
+  cursor: pointer;
 }
 .header_search_input {
   background: transparent;
@@ -295,6 +299,7 @@ body {
   min-height: 180px;
   min-width: 275px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .delivery_card_1 {
   background: url("../img/delivery_1.jpg");
@@ -335,6 +340,7 @@ body {
   padding: 5px 10px;
 }
 .delivery_info {
+  max-width: -moz-fit-content;
   max-width: fit-content;
   margin: 16px 10px;
 }
@@ -406,6 +412,7 @@ body {
   font-size: 20px;
   line-height: 23px;
   color: #49494F;
+  cursor: pointer;
 }
 .food-categories_tab-text_active {
   color: #F37321;
@@ -486,7 +493,7 @@ body {
   margin-bottom: 0;
   transition: 0.2s;
   text-decoration: none;
-  cursor: not-allowed;
+  cursor: pointer;
 }
 .food-categories_card-btn:hover {
   border: 2px solid #e38042;
@@ -497,6 +504,7 @@ body {
   border: 2px solid #F37321;
   border-radius: 33px;
   display: flex;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   margin: auto;
   margin-top: 60px;
@@ -547,6 +555,7 @@ body {
   max-height: 300px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   transition: 0.4s;
 }
 .benefits_img {
@@ -581,6 +590,9 @@ body {
 }
 .benefits_card:hover .benefits_answer {
   color: #ffffff;
+}
+.benefits_card:hover .benefits_img {
+  filter: brightness(1000%);
 }
 
 .footer {

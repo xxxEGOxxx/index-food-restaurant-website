@@ -14,6 +14,8 @@ body
     margin-bottom: 15px
     z-index: 5
     padding: 5px 0
+    &_logo
+        cursor: pointer
     &_container
         max-width: 1200px
         margin: auto
@@ -30,6 +32,7 @@ body
         padding: 13px 50px 13px 20px
         border-radius: 10px
         margin: 0 10px
+        cursor: pointer
         &_input
             background: transparent
             outline: none
@@ -95,6 +98,7 @@ body
         &_icon
             width: 24px
             height: 24px
+            
     &_cart:hover
         background: #c96e13
     
@@ -255,6 +259,7 @@ body
         min-height: 180px
         min-width: 275px
         margin-bottom: 30px
+        cursor: pointer
         &_1
             background: url("../img/delivery_1.jpg")
             border-radius: 18px
@@ -342,6 +347,7 @@ body
         font-size: 20px
         line-height: 23px
         color: #49494F
+        cursor: pointer
         &_active
             color: #F37321
     &_cards
@@ -410,7 +416,7 @@ body
         margin-bottom: 0
         transition: .2s
         text-decoration: none
-        cursor: not-allowed
+        cursor: pointer
     &_card-btn:hover
         border: 2px solid #e38042
         color: #e38042
@@ -462,6 +468,7 @@ body
         max-height: 300px
         display: flex
         flex-direction: column
+        cursor: pointer
         transition: .4s
     &_img
         margin: 32px auto 36px
@@ -488,7 +495,9 @@ body
     &_card:hover .benefits_question  
         color: #FFFFFF
     &_card:hover .benefits_answer
-        color: #ffffff    
+        color: #ffffff   
+    &_card:hover .benefits_img
+        filter: brightness(1000%)
 
 
 .footer

@@ -1,80 +1,64 @@
-const btn = document.querySelector(".food-categories_card-btn1"),
-      btn2 = document.querySelector(".food-categories_card-btn2"),
-      btn3 = document.querySelector(".food-categories_card-btn3"),
-      price1 = document.querySelector(".categories_price1"),
-      price2 = document.querySelector(".categories_price2"),
-      price3 = document.querySelector(".categories_price3");
 
-let itemsInBucket = document.querySelector(".header_cart_count");
+const btn1 = document.querySelector(".food-categories_card-btn1"),
+    btn2 = document.querySelector(".food-categories_card-btn2"),
+    btn3 = document.querySelector(".food-categories_card-btn3"),
+    price1 = document.querySelector(".categories_price1"),
+    price2 = document.querySelector(".categories_price2"),
+    price3 = document.querySelector(".categories_price3");
 
+let itemsInBasket = document.querySelector(".header_cart_count");
+let countOfItemsInBasket = parseInt(loadCountOfItemsInBasket());
 
-let countItemsInBucket = parseInt(loadCountOfItemsInBucket());
+initBasketCount();
 
-if (isNaN(countItemsInBucket)) {
-    countItemsInBucket = 0;
-  }
+function initBasketCount(){
+    itemsInBasket.textContent = countOfItemsInBasket;
+    console.log(countOfItemsInBasket);
+}
 
-itemsInBucket.textContent = countItemsInBucket;
-console.log(countItemsInBucket)
-
-//123
-function addToBucket() {
-    const randomNumber = Math.floor(Math.random() * 900) + 100;
-    countItemsInBucket++;
-    itemsInBucket.textContent = countItemsInBucket;
-    const randomNumber2 = Math.floor(Math.random() * 3) + 1;
-    if(randomNumber2 == 1){
-        price1.textContent = randomNumber + " ₽";
+function zeroIfNaN(item){
+    if (isNaN(item)) {
+        countOfItemsInBasket = 0;
+        return true;
     }
-    if(randomNumber2 == 2){
-        price2.textContent = randomNumber + " ₽";
+    else {
+        return false;
     }
-    if(randomNumber2 == 3){
-        price3.textContent = randomNumber + " ₽";
+}
+
+function addToBasket() {
+    zeroIfNaN(countOfItemsInBasket);
+
+    countOfItemsInBasket++;
+    itemsInBasket.textContent = countOfItemsInBasket;
+
+    const randomPrice = Math.floor(Math.random() * 900) + 100;
+    const chooseRandomPriceLabel = Math.floor(Math.random() * 3) + 1;
+    if(chooseRandomPriceLabel == 1){
+        price1.textContent = randomPrice + " ₽";
+    }
+    if(chooseRandomPriceLabel == 2){
+        price2.textContent = randomPrice + " ₽";
+    }
+    if(chooseRandomPriceLabel == 3){
+        price3.textContent = randomPrice + " ₽";
     }
 
-
-    saveCountOfItemsInBucket()
+    saveCountOfItemsInBasket();
     
-    console.log(countItemsInBucket)
+    console.log(countOfItemsInBasket);
 }
 
-function saveCountOfItemsInBucket(){
-    localStorage.setItem('countItemsInBucket', countItemsInBucket);
+function saveCountOfItemsInBasket(){
+    localStorage.setItem('countItemsInBucket', countOfItemsInBasket);
 }
 
-function loadCountOfItemsInBucket(){
+function loadCountOfItemsInBasket(){
     return localStorage.getItem('countItemsInBucket');
 }
 
-
-let cum = "globalCum"
-
-
-
-function fun1() {
-    function fun2(){
-        let cum2 = "cum2"
-        console.log(cum2)
-        console.log(cum1)
-        console.log(cum)
-    }
-    let cum1 = "cum1"
-    
-    console.log(cum1)
-    console.log(cum)
-    //console.log(cum2) will not work because no access to inner function vars
-
-    fun2()
-}
-
-fun1()
-
-const one = 1
-const two = 2
-const three = 3
-btn.addEventListener("click", addToBucket);
-btn2.addEventListener("click", addToBucket);
-btn3.addEventListener("click", addToBucket);
+btn1.addEventListener("click", addToBasket);
+btn2.addEventListener("click", addToBasket);
+btn3.addEventListener("click", addToBasket);
 
 
